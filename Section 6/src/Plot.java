@@ -12,4 +12,7 @@ public class Plot {
     public int getCropYield() {
         return cropYield;
     }
+    public String toString() {
+        return "Crop: "+cropType+"\tYield: "+cropYield;
+    }
 }

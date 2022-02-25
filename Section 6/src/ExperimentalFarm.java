@@ -25,8 +25,8 @@ public class ExperimentalFarm {
     }
     public boolean sameCrop(int col) {
         String firstCrop = farmPlots[0][col].getCropType();
-        for (int i = 0; i < farmPlots.length; i++) {
-            if (!farmPlots[i][col].getCropType().equals(firstCrop)) {
+        for (Plot[] farmPlot : farmPlots) {
+            if (!farmPlot[col].getCropType().equals(firstCrop)) {
                 return false;
             }
         }

@@ -9,8 +9,8 @@ public class February17 {
         System.out.println("values[1] >> "+values[1]);
 
         // Single dimension for loop
-        for (int i = 0; i < values.length; i++)
-            System.out.print(values[i]+"\t");
+        for (int value : values)
+            System.out.print(value + "\t");
         System.out.println();
 
         // 2D array
@@ -25,9 +25,9 @@ public class February17 {
 
         // 2D for loop
         System.out.println();
-        for (int i = 0; i < nums.length; i++) {
+        for (int[] num : nums) {
             for (int j = 0; j < nums[0].length; j++)
-                System.out.print(nums[i][j]+"\t");
+                System.out.print(num[j] + "\t");
             System.out.println();
         }
 
