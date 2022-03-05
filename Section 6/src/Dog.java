@@ -19,5 +19,8 @@ public class Dog {
         result += "Id:\t"+id+"\tName:\t"+name;
         return result;
     }
+    public int getID() {
+        return id;
+    }
 }
 
